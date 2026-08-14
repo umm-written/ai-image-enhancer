@@ -1,4 +1,4 @@
-import Home from "./components/Home";
+import Home from "./components/home";
 const App = () => {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-8 px-4 ">
@@ -14,7 +14,7 @@ const App = () => {
             <Home />
 
             <div className="text-sm text-gray-500 mt-6">
-                Powered By @SheryiansAI
+                Made By Amrit Biswas
             </div>
         </div>
     );
