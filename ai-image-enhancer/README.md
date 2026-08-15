@@ -1,16 +1,45 @@
-# React + Vite
+# AI Image Enhancer 🪄
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web application that automatically enhances image quality using AI.
 
-Currently, two official plugins are available:
+## 🚀 How It Works
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. **Upload**: Upload an image through the frontend.
+2. **Process**: The backend sends the image to the AI enhancement service.
+3. **Preview**: View the enhanced image side-by-side with your original image.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React, Vite, Tailwind CSS
+- **Backend**: Express.js (Node.js)
+- **AI API**: TechHK / PicWish Visual Scale API
 
-## Expanding the ESLint configuration
+## ⚡ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Backend Setup
+
+```bash
+cd backend
+npm install
+```
+
+Create a `.env` file in the `backend` folder:
+```env
+API_KEY=your_api_key_here
+PORT=5000
+```
+
+Start the backend server:
+```bash
+npm start
+```
+
+### 2. Frontend Setup
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
